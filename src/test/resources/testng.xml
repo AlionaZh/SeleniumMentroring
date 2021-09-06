@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<suite name="First Google Test Zhydzel">
+    <test name="GoogleMail Test">
+
+
+        <classes>
+            <class name="by.zhydzel.test.RegistrationTest">
+                <methods>
+                    <include name="testOpenRegistrationPage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
