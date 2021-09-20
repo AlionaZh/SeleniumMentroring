@@ -11,7 +11,7 @@ public class GoogleMailBasePage {
 
 
     public WebDriver driver;
-    protected final int WAIT_TIMEOUT_SECONDS = 10;
+    protected final int WAIT_TIMEOUT_SECONDS = 20;
 
     //Constructor
     public GoogleMailBasePage(WebDriver driver) {
@@ -23,15 +23,4 @@ public class GoogleMailBasePage {
     public WebElement waitForWebElementVisible(WebElement element) {
         return new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS).until(ExpectedConditions.visibilityOf(element));
     }
-
-    //Delay for Browser
-    public static int delayBrowser(int DelayBrowser) {
-        try {
-            Thread.sleep(DelayBrowser);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        return DelayBrowser;
-    }
-
 }

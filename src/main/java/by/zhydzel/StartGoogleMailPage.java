@@ -1,7 +1,5 @@
 package by.zhydzel;
 
-import net.bytebuddy.asm.Advice;
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,11 +11,7 @@ public class StartGoogleMailPage extends by.zhydzel.GoogleMailBasePage {
 
         super(driver);
     }
-
-    //*********Page Variables*********
-    String baseURL = "https://cloud.google.com/";
-
-    //*********Web Elements Init********
+      //*********Web Elements Init********
 
     @FindBy(xpath = "//input[@aria-label=\"Search\"]")
     WebElement InputSearch;
@@ -27,8 +21,8 @@ public class StartGoogleMailPage extends by.zhydzel.GoogleMailBasePage {
 
     //*********Page Methods*********
     public void goToStartGooglePage() {
-
-        driver.get(baseURL);
+            String baseURL = "https://cloud.google.com/";
+            driver.get(baseURL);
     }
 
     //Go to CalculatorPage
@@ -37,11 +31,7 @@ public class StartGoogleMailPage extends by.zhydzel.GoogleMailBasePage {
         InputSearch.sendKeys("Google Cloud Platform Pricing Calculator");
         InputSearch.sendKeys(Keys.ENTER);
         waitForWebElementVisible(LinkPricingCalculator);
-    //    delayBrowser(2000);
         LinkPricingCalculator.click();
-
     }
-
-
 }
 
