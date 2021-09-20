@@ -13,7 +13,7 @@ public class StartGoogleMailPage extends by.zhydzel.GoogleMailBasePage {
     }
       //*********Web Elements Init********
 
-    @FindBy(xpath = "//input[@aria-label=\"Search\"]")
+    @FindBy(xpath = "//input[@aria-label='Search']")
     WebElement InputSearch;
     @FindBy(xpath = "(//a[@data-ctorig='https://cloud.google.com/products/calculator'])[1]")
     WebElement LinkPricingCalculator;

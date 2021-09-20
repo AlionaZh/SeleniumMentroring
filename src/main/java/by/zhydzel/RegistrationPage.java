@@ -15,61 +15,61 @@ public class RegistrationPage extends by.zhydzel.GoogleMailBasePage {
     }
 
     //*********Web Elements Init********
-    @FindBy(xpath = "(//input[@name=\'quantity\'])[1]")
+    @FindBy(xpath = "(//input[@name='quantity'])[1]")
     WebElement numberOfInstances;
-    @FindBy(xpath = "//*[@ng-model=\'listingCtrl.computeServer.os\']")
+    @FindBy(xpath = "//*[@ng-model='listingCtrl.computeServer.os']")
     WebElement operatingSystem;
-    @FindBy(xpath = "//md-option[@value=\'free\']")
+    @FindBy(xpath = "//md-option[@value='free']")
     WebElement operatingSystemOption;
-    @FindBy(xpath = "//*[@ng-model=\'listingCtrl.computeServer.class\']")
+    @FindBy(xpath = "//*[@ng-model='listingCtrl.computeServer.class']")
     WebElement machineClass;
-    @FindBy(xpath = "//md-option[@value=\'regular\']")
+    @FindBy(xpath = "//md-option[@value='regular']")
     WebElement machineClassOption;
-    @FindBy(xpath = "//md-select[@ng-model=\'listingCtrl.computeServer.series\']")
+    @FindBy(xpath = "//md-select[@ng-model='listingCtrl.computeServer.series']")
     WebElement series;
     @FindBy(xpath = "//*[contains(text(),'N1')]//parent::md-option")
     WebElement seriesOption;
-    @FindBy(xpath = "//md-select[@ng-model=\'listingCtrl.computeServer.instance\']")
+    @FindBy(xpath = "//md-select[@ng-model='listingCtrl.computeServer.instance']")
     WebElement machineType;
-    @FindBy(xpath = "//md-option[@value=\'CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-8\']")
+    @FindBy(xpath = "//md-option[@value='CP-COMPUTEENGINE-VMIMAGE-N1-STANDARD-8']")
     WebElement machineTypeOption;
-    @FindBy(xpath = "(//md-checkbox[@aria-label=\'Add GPUs\'])[1]")
+    @FindBy(xpath = "(//md-checkbox[@aria-label='Add GPUs'])[1]")
     WebElement addGPUs;
-    @FindBy(xpath = "//md-select[@placeholder=\'Number of GPUs\']")
+    @FindBy(xpath = "//md-select[@placeholder='Number of GPUs']")
     WebElement numberOfGPUs;
-    @FindBy(xpath = "//*[@id=\'select_option_442\']")
+    @FindBy(xpath = "//*[@id='select_option_442']")
     WebElement numberOfGPUsOption;
-    @FindBy(xpath = "//md-select[@placeholder=\'GPU type\']")
+    @FindBy(xpath = "//md-select[@placeholder='GPU type']")
     WebElement GPUType;
-    @FindBy(xpath = "//md-option[@value=\'NVIDIA_TESLA_V100\']")
+    @FindBy(xpath = "//md-option[@value='NVIDIA_TESLA_V100']")
     WebElement GPUTypeOption;
-    @FindBy(xpath = "//md-select[@placeholder=\'Local SSD\']")
+    @FindBy(xpath = "//md-select[@placeholder='Local SSD']")
     WebElement localSSD;
     @FindBy(xpath = "//*[contains(text(),'2x375 GB')]//parent::md-option")
     WebElement localSSDOption;
-    @FindBy(xpath = "//md-select[@placeholder=\'Datacenter location\']")
+    @FindBy(xpath = "//md-select[@placeholder='Datacenter location']")
     WebElement dataCenterLocation;
     @FindBy(xpath = "(//*[contains(text(),' Frankfurt (europe-west3)')]//parent::md-option)[3]")
     WebElement dataCenterLocationOption;
-    @FindBy(xpath = "//md-select[@placeholder=\'Committed usage\']")
+    @FindBy(xpath = "//md-select[@placeholder='Committed usage']")
     WebElement committedUsage;
     @FindBy(xpath = "//div[@class='md-select-menu-container md-active md-clickable']/descendant::md-option[@ng-value='1'][@value='1']")
     WebElement committedUsageOption;
-    @FindBy(xpath = "(//button[@aria-label=\'Add to Estimate\'])[1]")
+    @FindBy(xpath = "(//button[@aria-label='Add to Estimate'])[1]")
     WebElement addToEstimate;
     @FindBy(xpath = "//h2/b")
     WebElement totalEstimatedCost;
-    @FindBy(xpath = "//button[@aria-label=\'Email Estimate\']")
+    @FindBy(xpath = "//button[@aria-label='Email Estimate']")
     WebElement buttonEmailEstimate;
-    @FindBy(xpath = "//*[@id=\'eposta_adres\']")
+    @FindBy(xpath = "//*[@id='eposta_adres']")
     WebElement createdEmailAddress;
-    @FindBy(xpath = "//input[@ng-model=\'emailQuote.user.email\']")
+    @FindBy(xpath = "//input[@ng-model='emailQuote.user.email']")
     WebElement emailForLetter;
-    @FindBy(xpath = "//*[@aria-label=\'Send Email\']")
+    @FindBy(xpath = "//*[@aria-label='Send Email']")
     WebElement buttonSendEmail;
-    @FindBy(xpath = "//*[@class=\'mailler\']/li[2]/a")
+    @FindBy(xpath = "//*[@class='mailler']/li[2]/a")
     WebElement receivedMessage;
-    @FindBy(xpath = "//*[@class=\'mailler\']/li[2]/a")
+    @FindBy(xpath = "//*[@class='mailler']/li[2]/a")
     WebElement receivedMessage1;
     @FindBy(xpath = "//*[contains(text(),'Total Estimated Monthly Cost')]/parent::td/following-sibling::*/h3")
     WebElement emailBody;
